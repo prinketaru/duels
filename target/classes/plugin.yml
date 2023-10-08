@@ -1,0 +1,37 @@
+name: Duels
+version: '1.0'
+main: dev.prinke.duels.Duels
+description: A plugin that allows players to duel each other (Made for the SunSMP)
+api-version: '1.20'
+commands:
+  duel:
+    description: The main command for duels
+    usage: /<command> <player>
+    permission: duels.duel
+    aliases:
+      - duels
+    default: true
+  restoreinventory:
+    description: Restores a player's inventory
+    usage: /<command> <player>
+    permission: duels.restoreinventory
+    aliases:
+      - ri
+    default: op
+
+permissions:
+    duels.duel:
+        description: The main command for duels
+        default: true
+    duels.invite:
+        description: Allows a player to start a duel
+        default: true
+    duels.accept:
+        description: Allows a player to accept a duel
+        default: true
+    duels.forfeit:
+        description: Allows a player to forfeit a duel
+        default: true
+    duels.addkit:
+        description: Allows a player to create a kit
+        default: op
